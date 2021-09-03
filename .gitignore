@@ -1,7 +1,7 @@
-/FormWord
-/Word
-/BEC_partial.txt
-/cet6edit.avi
-/text.avi
-/word.xlsx
-/word2.xlsx
+FormWord/
+Word/
+cet6-star/
+GraWord/
+*.avi
+*.txt
+*.xlsx

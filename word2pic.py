@@ -11,8 +11,8 @@ size = (1280, 720)#定义图片大小，需要和视频大小一致
 xlsx = xlrd.open_workbook(r"word.xlsx")
 sheet1 = xlsx.sheets()[0]  # 获得第1张sheet
 
-for i in range(0, 20):#索引从第0行开始
-#for i in range(0, sheet1.nrows):
+#for i in range(0, 20):#索引从第0行开始
+for i in range(0, sheet1.nrows):
     word=str(sheet1.row(i)[0].value)
     meaning=str(sheet1.row(i)[1].value)
     #1如果找到，并且后面不是& /，坐标不是0，就在前面加一个换行
@@ -35,8 +35,8 @@ for i in range(0, 20):#索引从第0行开始
     # 绘制文字信息
     draw.text((50, 50), word, font=font, fill=(0, 0, 0))#-------------------单词的绘制位置和颜色
     font = ImageFont.truetype("msyh.ttc", 40)#-------------------释义的字体大小
-    draw.text((50, 230), meaning, font=font, fill=(0, 51, 26))#-------------------释义的绘制位置和颜色
+    draw.text((50, 230), meaning, font=font, fill=(70,70,70))#-------------------释义的绘制位置和颜色
     bk_img = np.array(img_pil)
-    save_name="./Word/"+word+".jpg"
+    save_name="./GraWord/"+word+".jpg"
     print(save_name)
     cv2.imwrite(save_name, bk_img)
