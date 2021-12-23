@@ -11,9 +11,9 @@ size = (1280, 720)
 
 
 #videowriter = cv2.VideoWriter("test.avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps, size)
-videowriter = cv2.VideoWriter("gra.avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps, size)
+videowriter = cv2.VideoWriter("midSchool.avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps, size)
 #path = r'./Word/'
-path = r'./GraWord/'
+path = r'./midSchool/'
 count=0
 for i in os.listdir(path):
     count=count+1

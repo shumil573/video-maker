@@ -12,9 +12,9 @@ size = (1280, 720)
 
 
 #videowriter = cv2.VideoWriter("test.avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps, size)
-videowriter = cv2.VideoWriter("cet6_random.avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps, size)
+videowriter = cv2.VideoWriter("gra_random.avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), fps, size)
 #path = r'./Word/'
-path = r'./FormWord/'
+path = r'./GraWord/'
 count=0
 files = glob.glob(path+"*.jpg")
 shuffle(files)
