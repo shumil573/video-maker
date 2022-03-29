@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="911" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="hsy@10.112.109.109:9144" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="911">
         <serverdata>
@@ -9,6 +9,14 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="hsy@10.112.109.109:9144">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/hsy/code" local="$PROJECT_DIR$/../../project8/actionRecog" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
